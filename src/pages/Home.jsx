@@ -1,5 +1,5 @@
 
-import Skills from "../components/skills"
+import Skills from "../components/Skills"
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
