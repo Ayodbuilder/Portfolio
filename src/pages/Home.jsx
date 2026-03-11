@@ -1,4 +1,3 @@
-
 import Skills from "../components/Skills"
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
@@ -7,7 +6,7 @@ import { Link } from "react-router-dom"
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-[80vh] flex flex-col justify-center text-white overflow-hidden">
+      <section className="relative min-h-[80vh] flex flex-col justify-center text-white overflow-hidden px-4 md:px-8">
 
         {/* Animated Background */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -41,13 +40,13 @@ export default function Home() {
         </div>
 
         {/* Glass Container */}
-        <div className="max-w-3xl p-8 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl">
+        <div className="max-w-3xl mx-auto p-6 md:p-10 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl">
 
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-6xl font-extrabold mb-6 leading-tight"
+            className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-center md:text-left"
           >
             Hi, I'm <span className="text-blue-500">Victor</span> 👋
           </motion.h1>
@@ -56,7 +55,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="text-lg text-gray-300 mb-8"
+            className="text-base md:text-lg text-gray-300 mb-8 text-center md:text-left"
           >
             I build modern, responsive web applications using React and Tailwind CSS.
             I focus on clean UI, performance, and creating impactful digital experiences.
@@ -68,16 +67,16 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 1 }}
-            className="flex gap-4"
+            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
           >
             <Link to="/projects">
-              <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition">
+              <button className="w-full sm:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition">
                 View Projects
               </button>
             </Link>
 
             <Link to="/contact">
-              <button className="px-6 py-3 border border-gray-500 hover:border-white rounded-lg transition">
+              <button className="w-full sm:w-auto px-6 py-3 border border-gray-500 hover:border-white rounded-lg transition">
                 Contact Me
               </button>
             </Link>

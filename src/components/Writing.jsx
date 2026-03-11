@@ -32,65 +32,51 @@ const Writing = () => {
   ];
 
   return (
-    <section className="relative min-h-screen py-16 text-white overflow-hidden">
+    <section className="relative min-h-screen py-12 md:py-16 px-4 md:px-8 text-white overflow-hidden">
 
       {/* Animated Glowing Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
         <motion.div
           className="absolute top-20 left-10 w-72 h-72 bg-blue-500 rounded-full blur-3xl opacity-30"
-          animate={{
-            x: [0, 120, -120, 0],
-            y: [0, -80, 80, 0],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
+          animate={{ x: [0, 120, -120, 0], y: [0, -80, 80, 0] }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
         />
 
         <motion.div
           className="absolute bottom-10 right-10 w-72 h-72 bg-purple-500 rounded-full blur-3xl opacity-30"
-          animate={{
-            x: [0, -150, 150, 0],
-            y: [0, 100, -100, 0],
-          }}
-          transition={{
-            duration: 14,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
+          animate={{ x: [0, -150, 150, 0], y: [0, 100, -100, 0] }}
+          transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
         />
 
       </div>
 
       {/* Glass Container */}
       <motion.div
-        className="relative max-w-6xl mx-auto bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-10"
+        className="relative max-w-6xl mx-auto bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 md:p-10"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
 
-        <h2 className="text-4xl font-bold mb-10 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold mb-8 md:mb-10 text-center">
           Technical Writing
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {articles.map((article, index) => (
             <motion.div
               key={index}
               whileHover={{ y: -6 }}
-              className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-xl transition shadow-lg"
+              className="bg-white/5 backdrop-blur-md border border-white/10 p-5 md:p-6 rounded-xl transition shadow-lg"
             >
 
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-lg md:text-xl font-semibold mb-2">
                 {article.title}
               </h3>
 
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-400 mb-4 text-sm md:text-base">
                 {article.description}
               </p>
 
@@ -98,9 +84,9 @@ const Writing = () => {
                 href={article.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300"
+                className="text-blue-400 hover:text-blue-300 text-sm md:text-base"
               >
-                You can read here →
+                Read article →
               </a>
 
             </motion.div>
