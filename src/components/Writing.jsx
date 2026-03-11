@@ -28,6 +28,11 @@ const Writing = () => {
       title: "Anomaly in a World of Gods.",
       description: "A fictional story about a world where a human boy was an anomaly.",
       link: "https://www.wattpad.com/story/299486105"
+    },
+    {
+      title: "How I Built My Developer Portfolio with React, Tailwind, and Vercel (Problems, Fixes, and Lessons).",
+      description: "A detailed account of the challenges and solutions encountered while building my developer portfolio.",
+      link: "https://medium.com/@olayinkavictor68/how-i-built-my-developer-portfolio-with-react-tailwind-and-vercel-problems-fixes-and-lessons-5f1b9c410eaa"
     }
   ];
 
