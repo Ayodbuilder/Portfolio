@@ -92,7 +92,7 @@ function Contact() {
 
         {/* Contact Form */}
         <form
-          action="mailto:olayinkavictor68@gmail.com"
+          action="https://formspree.io/f/mgonkeew"
           method="POST"
           className="space-y-4"
         >
