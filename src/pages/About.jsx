@@ -47,6 +47,7 @@ export default function About() {
         <p className="text-gray-300 leading-relaxed mb-6">
           My main focus is working with React, JavaScript, and modern web
           development tools to create fast and scalable applications.
+          I am a writer as well, sharing my knowledge through technical articles and exploring creative storytelling through fiction. I believe in continuous learning and am always excited to take on new challenges in the world of web development and writing.
         </p>
 
         <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
