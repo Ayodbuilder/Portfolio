@@ -65,7 +65,7 @@ const Writing = () => {
       >
 
         <h2 className="text-2xl md:text-4xl font-bold mb-8 md:mb-10 text-center">
-          Technical Writing
+          My Writing Library
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
